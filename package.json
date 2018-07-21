@@ -1,0 +1,17 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "Retail and stocking command-line interface for a fictional store selling defunct goods.",
+  "main": "bamazonCustomer.js",
+  "dependencies": {
+    "columnify": "^1.5.4",
+    "inquirer": "^6.0.0",
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mitchell Brooks",
+  "license": "ISC"
+}
