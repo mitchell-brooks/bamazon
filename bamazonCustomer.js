@@ -53,10 +53,10 @@ function shop(){
           if(err) throw err;
         var newQuantity = res[0].stock_quantity - answer.quantity;
         if (newQuantity < 0){
-          console.log("Sorry, that's more than we currently have in stock.\n\n");
+          console.log("Sorry, that's more than we currently have in stock.\n");
           getInventory();
         } else {
-          console.log("Congratulations on purchasing " + res[0].product_name + ". Here's " + answer.quantity.toString() + "!\n\n");
+          console.log("\nCongratulations on purchasing " + res[0].product_name + ". Here's " + answer.quantity.toString() + "!\n");
         connection.query("UPDATE products SET ? WHERE ?", [{stock_quantity: newQuantity},{item_id: answer.itemChoice}],function(err) {
           if (err) throw err;
         });
